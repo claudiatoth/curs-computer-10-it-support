@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Support & Fehler beheben — germană pentru probleme tehnice · A2/B1</title>
+    <meta property="og:title" content="Computer & Büro Teil 10 — IT-Support & Fehler beheben">
+    <meta property="og:description" content="Germană pentru probleme tehnice: descrii defecțiuni, ceri ajutor la IT-Support, repari pas cu pas. Wenn-Sätze (Wenn..., dann...) + verbele abstürzen/herunterfahren/reparieren/lösen/anrufen + dialog animat cu IT-Support. Nivel A2/B1.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#top" class="navbar-logo">ʚଓ Claudia Toth</a>
+        <ul class="navbar-menu">
+            <li><a href="#teorie" onclick="openSection(0)">Teorie</a></li>
+            <li><a href="#dialog" onclick="openSection(1)">🎬 Dialog</a></li>
+            <li><a href="#ex1" onclick="openSection(2)">Ex. 1</a></li>
+            <li><a href="#ex2" onclick="openSection(3)">Ex. 2</a></li>
+            <li><a href="#ex3" onclick="openSection(4)">Ex. 3</a></li>
+            <li><a href="#ex4" onclick="openSection(5)">Ex. 4</a></li>
+            <li><a href="#ex5" onclick="openSection(6)">Ex. 5</a></li>
+            <li><a href="#flashcards" onclick="openSection(7)">📇 Flashcards</a></li>
+            <li><a href="#verbs" onclick="openSection(8)">🔁 Verb-Konjugation</a></li>
+            <li><a href="#final-test" onclick="openSection(9)">🎯 Test Final</a></li>
+            <li><a href="#schreiben" onclick="openSection(10)">✍️ Schreiben</a></li>
+            <li><a href="curs-computer-10-it-support.pdf" download>📄 PDF</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="top">
+        <div class="header">
+            <h1>ʚଓ IT-Support & Fehler beheben</h1>
+            <p class="subtitle">Germană pentru probleme tehnice — descrii defecțiunea, ceri ajutor, repari pas cu pas · Nivel A2/B1</p>
+            <p>Claudia Toth · Deutsch am Computer & im Büro — Teil 10</p>
+        </div>
+
+        <div class="cando-box" style="background:#ecfdf5; border:1.5px solid #10b981; border-radius:14px; padding:16px 22px; margin:0 0 22px;">
+            <h3 style="color:#065f46; margin:0 0 8px; font-size:1.15rem;">🎯 După lecția asta vei putea…</h3>
+            <ul style="margin:0; padding-left:22px; line-height:1.8; color:#1F1B16;">
+                <li>să <strong>descrii o problemă tehnică</strong> în germană (nu pornește, e blocat, nu merge)</li>
+                <li>să <strong>ceri ajutor la IT-Support</strong> și să înțelegi instrucțiunile pas cu pas</li>
+                <li>să folosești <strong>„Wenn..., dann..."</strong> ca să spui ce faci când apare o problemă</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="section" id="teorie">
+                <div class="section-header" onclick="toggleMainSection(0)"><h3>ʚଓ TEORIE</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-0"><div id="theory-container"></div></div>
+            </div>
+
+            <div class="section" id="dialog">
+                <div class="section-header" onclick="toggleMainSection(1)"><h3>ʚଓ 🎬 Dialog animat: Mein Computer streikt!</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-1">
+                    <p style="margin-bottom:14px;"><em>Apasă ▶️ Pornește. Andreei i s-a blocat calculatorul înainte de o ședință importantă; sună la IT-Support, iar Herr Wolf o ghidează calm pas cu pas până rezolvă problema. Reascultă orice replică cu 🔁.</em></p>
+                    <div id="dialog1-container"></div>
+                    <div class="theory-box" style="background:#FBF7EF; border-left:4px solid #D4A574; margin-top:18px;">
+                        <h4 style="color:#065f46;">💎 Expresiile de aur (din dialog)</h4>
+                        <ul style="margin:6px 0 0 18px; line-height:1.8;">
+                            <li><strong>Mein Computer reagiert nicht mehr.</strong> — Calculatorul meu nu mai reacționează.</li>
+                            <li><strong>Können Sie mir bitte helfen?</strong> — Mă puteți ajuta, vă rog?</li>
+                            <li><strong>Haben Sie es schon neu gestartet?</strong> — L-ați repornit deja?</li>
+                            <li><strong>Jetzt funktioniert es wieder!</strong> — Acum merge din nou!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="ex1">
+                <div class="section-header" onclick="toggleMainSection(2)"><h3>ʚଓ Übung 1: Lückentext — completează</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-2">
+                    <div id="ex1-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(1)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(1)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-1"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex2">
+                <div class="section-header" onclick="toggleMainSection(3)"><h3>ʚଓ Übung 2: Quiz — alegere multiplă</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-3">
+                    <div id="ex2-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(2)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(2)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-2"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex3">
+                <div class="section-header" onclick="toggleMainSection(4)"><h3>ʚଓ Übung 3: Potrivește vocabularul</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-4">
+                    <div id="ex3-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(3)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(3)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-3"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex4">
+                <div class="section-header" onclick="toggleMainSection(5)"><h3>ʚଓ Übung 4: Traduceri RO → DE</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-5">
+                    <div id="ex4-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(4)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(4)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-4"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex5">
+                <div class="section-header" onclick="toggleMainSection(6)"><h3>ʚଓ Übung 5: Situație ↔ expresie</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-6">
+                    <div id="ex5-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(5)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(5)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-5"></div>
+                </div>
+            </div>
+
+            <div class="section" id="flashcards">
+                <div class="section-header" onclick="toggleMainSection(7)"><h3>ʚଓ Flashcards - Învățare prin repetiție</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-7"><div id="flashcards-container"></div></div>
+            </div>
+
+            <div class="section" id="verbs">
+                <div class="section-header" onclick="toggleMainSection(8)"><h3>ʚଓ 🔁 Verb-Konjugation - Verbe pentru probleme tehnice</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-8"><div id="verbs-container"></div></div>
+            </div>
+
+            <div class="section" id="final-test">
+                <div class="section-header" onclick="toggleMainSection(9)"><h3>ʚଓ 🎯 Test Final - Testează-ți cunoștințele!</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-9"><div id="final-test-container"></div></div>
+            </div>
+
+            <div class="section" id="schreiben">
+                <div class="section-header" onclick="toggleMainSection(10)"><h3>ʚଓ ✍️ Schreibwerkstatt - Atelier de scriere</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-10">
+                    <div class="exercise-instruction">
+                        <strong>✍️ Sarcina de scriere:</strong> Scrie un text scurt (aprox. <strong>40-60 de cuvinte</strong>) — descrie o problemă tehnică pe care ai avut-o și cum ai rezolvat-o: ce nu mergea, ce ai încercat, dacă ai sunat la IT-Support și cum s-a terminat. Folosește <strong>minimum 6 cuvinte</strong> din lecție și măcar o propoziție cu <strong>„Wenn..., dann..."</strong>.
+                    </div>
+                    <div class="theory-box" style="background:#FBF7EF;">
+                        <h4>💡 Răspunde la întrebările (Leitfragen):</h4>
+                        <ul style="margin:6px 0 0 18px; line-height:1.7;">
+                            <li>⚠️ <strong>Was war das Problem?</strong> (Ce problemă a fost? — nu pornește, e blocat, nu merge)</li>
+                            <li>🔧 <strong>Was haben Sie zuerst versucht?</strong> (Ce ai încercat întâi? — neu starten, herunterfahren)</li>
+                            <li>📞 <strong>Haben Sie den IT-Support angerufen?</strong> (Ai sunat la IT-Support?)</li>
+                            <li>🔁 <strong>Wenn das Problem bleibt, was machen Sie dann?</strong> (Dacă rămâne problema, ce faci atunci?)</li>
+                            <li>✅ <strong>Wie wurde das Problem gelöst?</strong> (Cum s-a rezolvat?)</li>
+                        </ul>
+                    </div>
+                    <div class="theory-box" style="background:#F5F0E8; border-left:4px solid #D4A574;">
+                        <h4>📝 Model (ca să-ți fie mai ușor):</h4>
+                        <p class="de" style="color:#065f46;"><em>Gestern hat mein Computer plötzlich nicht mehr reagiert — der Bildschirm war schwarz. Zuerst habe ich ihn neu gestartet, aber das hat nicht geholfen. Wenn ein Programm abstürzt, dann fahre ich den Computer normalerweise herunter. Diesmal habe ich den IT-Support angerufen. Herr Wolf hat mir geholfen, und nach zehn Minuten war das Problem gelöst. Jetzt funktioniert alles wieder!</em></p>
+                        <p class="ro" style="color:#5A5147; font-style:italic;">(Ieri calculatorul meu dintr-odată nu a mai reacționat — ecranul era negru. Întâi l-am repornit, dar asta nu a ajutat. Dacă un program se blochează, atunci închid de obicei calculatorul. De data asta am sunat la IT-Support. Herr Wolf m-a ajutat și după zece minute problema era rezolvată. Acum totul merge din nou!)</p>
+                    </div>
+                    <div style="text-align:center; margin-top:22px;">
+                        <p style="color:#047857; margin-bottom:14px; font-size:1rem;">Când ești gata, trimite-mi textul tău prin formular. Îl citesc și îți dau feedback personalizat. 🦋</p>
+                        <a href="https://forms.gle/nRtRTnLorXULz5c89" target="_blank" rel="noopener noreferrer" style="display:inline-block; background:#10B981; color:white; padding:14px 32px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:1.05rem; box-shadow:0 2px 6px rgba(16,185,129,0.3);">✍️ Trimite textul tău →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theory-box" style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.3rem; font-weight: bold; color: #065f46;">🎉 Sehr gut gemacht!</p>
+                <p>Acum te descurci când ceva nu merge: descrii problema (reagiert nicht, ist abgestürzt), încerci primii pași (neu starten, herunterfahren), suni la IT-Support și înțelegi instrucțiunile pas cu pas. Și mai ales știi să spui cu „Wenn..., dann..." ce faci în fiecare situație. Nicio defecțiune nu te mai sperie! Herzlichen Glückwunsch! 💚</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="theory.js"></script>
+    <script src="dialogs.js?v=1"></script>
+    <script src="exercises.js"></script>
+    <script src="flashcards.js"></script>
+    <script src="verbs.js"></script>
+    <script src="final-test.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
